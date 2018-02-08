@@ -1,1 +1,75 @@
-
+header {
+    .sign-in-bar {
+        background-color: $header-color;
+        height: 45px;
+    }
+    .sign-in-list {
+        list-style-type: none;
+        padding: 0.9em 0;
+        font-weight: bold;
+        li {
+            float: right;
+            flex-direction: row;
+            margin-right: 0.5em;
+            font-size: 13px;
+            font-family: "Montserrat";
+            color: $top-bar-text;
+        }
+        .language-select {
+            margin-left: 1em;
+            float: left;
+            display: flex;
+            select {
+                margin: -0.15em 0;
+                flex-direction: column;
+                list-style-type: none;
+                background-color: $header-color;
+                border: none;
+                color: $top-bar-text;
+                font-weight: bold;
+                option {
+                    font-weight: bold;
+                }
+            }
+            @media only screen and (min-width: 1180px) {
+                margin-left: 0;
+            }
+        }
+        .baket-btn {
+            display: none;
+            @media only screen and (min-width: 768px) {
+                margin-right: 2.7em;
+                background: $aqua;
+                color: $white;
+                margin: -1.05em 0px;
+                display: flex;
+                flex-direction: row;
+            }
+            .baket {
+                margin: 1.2em 0 1em 1.6em;
+            }
+            p {
+                padding: 1em;
+                font-weight: 300;
+            }
+            .baket-arrow {
+                margin: 1.2em 1.6em 1em 0;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .sign-in-btn {
+            margin-right: 1em;
+            @media only screen and (min-width: 1025px) {
+                margin-right: 6.2em;
+            }
+        }
+        .register-btn {
+            margin-right: 0.5em;
+            @media only screen and (min-width: 450px) {
+                margin-right: 2.6em;
+            }
+        }
+    }
+}
