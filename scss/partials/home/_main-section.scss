@@ -1,7 +1,7 @@
 .main-section {
     background: $grey;
     position: relative;
-    top: -85px;
+    top: -95px;
     height: 100vh;
     .main-image {
         background: url("../images/home/main-section-photo.png") no-repeat;
@@ -58,7 +58,7 @@
         @media only screen and (min-width: 900px) {
             height: 0;
             justify-content: flex-end;
-            margin: -10em 2em;
+            margin: -10em -2em;
         }
         button {
             width: 230px;

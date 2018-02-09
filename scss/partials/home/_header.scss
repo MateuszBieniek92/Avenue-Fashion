@@ -79,7 +79,7 @@ header {
             font-size: 20px;
             color: $logo-color;
             font-weight: 900;
-            margin-left: 1em;
+            margin: -1.55em -13em 0px 0;
             p {
                 display: inline-block;
                 font-size: 20px;
@@ -87,10 +87,58 @@ header {
                 font-weight: 400;
             }
         }
+        .menu {
+            display: none;
+            @media only screen and (min-width: 900px) {
+                list-style-type: none;
+                display: flex;
+                justify-content: flex-end;
+                margin: -1.55em 0 0 0;
+            }
+            @media only screen and (min-width: 1200px) {
+                margin: -1.55em -5em 0 0;
+            }
+            @media only screen and (min-width: 1500px) {
+                margin: -1.55em -13em 0 0;
+            }
+            li {
+                margin-right: 2em;
+                font-weight: bold;
+                color: $logo-color;
+                @media only screen and (min-width: 1200px) {
+                    margin-right: 4em;
+                }
+                &:hover {
+                    cursor: pointer;
+                    transition: .5s;
+                    color: $aqua;
+                }
+                input {
+                    display: none;
+                    @media only screen and (min-width: 900px) {
+                        display: inline-block;
+                        border: 1px solid #e7e7e7;
+                        background-color: #f8f8f8;
+                        height: 25px;
+                        margin-top: -0.5em;
+                    }
+                }
+                i {
+                    display: flex;
+                    color: $text-color;
+                }
+            }
+            .search-input {
+                display: none;
+                @media only screen and (min-width: 1200px) {
+                    display: inline-block;
+                }
+            }
+        }
         .hamburger-menu {
             float: right;
             margin: 0.5em 1em 0 0;
-            @media (min-width: 900px) {
+            @media only screen and (min-width: 900px) {
                 display: none;
             }
         }
