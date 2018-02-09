@@ -1,1 +1,82 @@
-
+.main-section {
+    background: $grey;
+    position: relative;
+    top: -85px;
+    height: 100vh;
+    .main-image {
+        background: url("../images/home/main-section-photo.png") no-repeat;
+        background-size: contain;
+        height: 95.3vh;
+        position: absolute;
+        width: 100%;
+        top: 45px;
+        @media only screen and (min-width: 900px) {
+            overflow: hidden;
+            width: 70%;
+            left: 230px;
+        }
+        @media only screen and (min-width: 1480px) {
+            left: 330px;
+        }
+        @media only screen and (min-width: 1780px) {
+            left: 430px;
+        }
+    }
+    .main-text {
+        display: none;
+        @media only screen and (min-width: 900px) {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            font-size: 330px;
+            font-weight: bold;
+            padding: 0.8em 0;
+            color: $main-text-color;
+            letter-spacing: 0.1em;
+            z-index: 1;
+        }
+        @media only screen and (min-width: 1100px) {
+            letter-spacing: 0.2em;
+        }
+        @media only screen and (min-width: 1400px) {
+            margin-left: 0.5em;
+            letter-spacing: 0.5em;
+        }
+        @media only screen and (min-width: 1400px) {
+            letter-spacing: 0.6em;
+        }
+        @media only screen and (min-width: 1800px) {
+            letter-spacing: 0.6em;
+        }
+    }
+    .men-collection-btn {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        @media only screen and (min-width: 900px) {
+            height: 0;
+            justify-content: flex-end;
+            margin: -10em 2em;
+        }
+        button {
+            width: 230px;
+            height: 45px;
+            border: 2px solid $main-text-color;
+            background-color: $grey;
+            font-size: 14px;
+            color: #454647;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            position: relative;
+            z-index: 100;
+            @media only screen and (min-width: 900px) {
+                width: 280px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
