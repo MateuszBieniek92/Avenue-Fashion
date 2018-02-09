@@ -71,11 +71,28 @@
             letter-spacing: 0.05em;
             position: relative;
             z-index: 100;
+            overflow:hidden;
             @media only screen and (min-width: 900px) {
                 width: 280px;
             }
+            .layer {
+                color: #fff;
+                position: absolute;
+                top: -60px;
+                width: 100%;
+                left: 0;
+                padding: 21px 0;
+                background-color: #454647;
+                @include transition(all 0.3s ease);
+                z-index: -1;
+            }
             &:hover {
+                @include transition(all 0.3s ease); 
+                color: $white;
                 cursor: pointer;
+                .layer {
+                    top: 0px;
+                }
             }
         }
     }
