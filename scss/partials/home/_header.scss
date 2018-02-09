@@ -31,17 +31,17 @@ header {
                     font-weight: bold;
                 }
             }
-            @media only screen and (min-width: 1180px) {
-                margin-left: 0;
+            @media only screen and (min-width: 900px) {
+                margin: 0 0 0 8em;
             }
         }
         .baket-btn {
             display: none;
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 900px) {
                 margin-right: 2.7em;
                 background: $aqua;
                 color: $white;
-                margin: -1.05em 0px;
+                margin: -1.05em 8em 0 0;
                 display: flex;
                 flex-direction: row;
             }
@@ -70,6 +70,38 @@ header {
             @media only screen and (min-width: 450px) {
                 margin-right: 2.6em;
             }
+        }
+    }
+    nav {
+        .logo {
+            font-size: 20px;
+            color: $logo-color;
+            font-weight: 900;
+            margin-left: 1em;
+            p {
+                display: inline-block;
+                font-size: 20px;
+                margin: 0.8em 0 0 0;
+                font-weight: 400;
+            }
+        }
+        .hamburger-menu {
+            float: right;
+            margin: 0.5em 1em 0 0;
+            @media (min-width: 900px) {
+                display: none;
+            }
+        }
+        .bar {
+            width: 35px;
+            height: 4px;
+            background-color: $logo-color;
+            display: block;
+            margin: 7px auto;
+            transition: all 0.3s ease-in-out;
+        }
+        .hamburger:hover {
+            cursor: pointer;
         }
     }
 }
