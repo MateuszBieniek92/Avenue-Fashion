@@ -82,12 +82,13 @@
                 width: 100%;
                 left: 0;
                 padding: 21px 0;
-                background-color: #454647;
+                background-color: $aqua;
                 @include transition(all 0.3s ease);
                 z-index: -1;
             }
             &:hover {
-                @include transition(all 0.3s ease); 
+                border: 2px solid $aqua;
+                @include transition(all 0.8s ease); 
                 color: $white;
                 cursor: pointer;
                 .layer {
