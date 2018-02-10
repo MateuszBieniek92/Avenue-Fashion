@@ -1,1 +1,21 @@
+.most-popular-clothes {
+    .cloth-choice {
+        display: flex;
+        list-style-type: none;
+        border-top: 1px solid #eeeeee;
+        padding: 3.8em 0;
+        margin-top: -2em;
+        li {
+            color: $top-bar-text;
+            font-size: 13px;
+            font-weight: bold;
+            margin-right: 4em;
+        }
+        li:hover {
+            @include transition(all 0.3s ease);
+            color: $aqua;
+            cursor: pointer;
+        }
+    }
+}
 
