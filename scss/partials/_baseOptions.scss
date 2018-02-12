@@ -34,10 +34,16 @@ $columnsCount: 12;
     width: 100%;
     //    border: 1px solid red;
 }
-
 @media (min-width: 768px) {
     @for $i from 1 through $columnsCount {
-        .col-#{$i} {
+        .col-md-#{$i} {
+            width: (100%/$columnsCount)*$i;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    @for $i from 1 through $columnsCount {
+        .col-xl-#{$i} {
             width: (100%/$columnsCount)*$i;
         }
     }

@@ -1,15 +1,26 @@
 .most-popular-clothes {
     .cloth-choice {
         display: flex;
+        flex-direction: column;
         list-style-type: none;
         border-top: 1px solid #eeeeee;
         padding: 3.8em 0;
         margin-top: -2em;
+        @media only screen and (min-width: 900px) {
+            flex-direction: row;
+        }
         li {
             color: $top-bar-text;
             font-size: 13px;
             font-weight: bold;
             margin-right: 4em;
+            text-align: center;
+            margin-right: 0;
+            padding: 1em;
+            @media only screen and (min-width: 900px) {
+                margin-right: 2em;
+                text-align: left;
+            }
         }
         li:hover {
             @include transition(all 0.3s ease);
@@ -17,5 +28,63 @@
             cursor: pointer;
         }
     }
+    .cloths {
+        .cloth-placing {
+            margin: 0.5em 1em;
+            background: $grey;
+            height: 375px;
+            @media only screen and (min-width: 900px) {
+                margin: 0.8em;
+            }
+            @media only screen and (min-width: 1200px) {
+                height: 420px;
+            }
+        }
+        .cloth-placing-small {
+            margin: 0.5em 1em;
+            background: $grey;
+            height: 375px;
+            @media only screen and (min-width: 900px) {
+                margin: 0.8em;
+            }
+            @media only screen and (min-width: 1200px) {
+                height: 325px;
+            }
+        }
+        .item-4-position {
+            @media only screen and (min-width: 1200px) {
+                margin: -6em 0.8em;
+            }
+        }
+        .cloth-position {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+        }
+        .cloth-1 {
+            background: url("../images/home/items/item-1.jpg") no-repeat center;
+            background-size: contain;
+        }
+        .cloth-2 {
+            background: url("../images/home/items/item-2.jpg") no-repeat center;
+            background-size: contain;
+        }
+        .cloth-3 {
+            background: url("../images/home/items/item-3.jpg") no-repeat center;
+            background-size: contain;
+        }
+        .cloth-4 {
+            background: url("../images/home/items/item-4.jpg") no-repeat center;
+            background-size: contain;
+        }
+        .cloth-5 {
+            background: url("../images/home/items/item-5.png") no-repeat center;
+            background-size: contain;
+        }
+        .cloth-6 {
+            background: url("../images/home/items/item-6.jpg") no-repeat center;
+            background-size: contain;
+            margin-bottom: 5.8em;
+        }
+    }
 }
-
