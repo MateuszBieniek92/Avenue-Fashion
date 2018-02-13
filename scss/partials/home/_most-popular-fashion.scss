@@ -1,4 +1,5 @@
 .most-popular-clothes {
+    overflow: auto;
     .cloth-choice {
         display: flex;
         flex-direction: column;

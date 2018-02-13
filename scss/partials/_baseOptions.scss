@@ -31,9 +31,15 @@ $columnsCount: 12;
 [class*='col-'] {
     float: left;
     min-height: 1px;
-    width: 100%;
-    //    border: 1px solid red;
+    width: 100%; //    border: 1px solid red;
 }
+
+@for $i from 1 through $columnsCount {
+    .col-#{$i} {
+        width: (100%/$columnsCount)*$i;
+    }
+}
+
 @media (min-width: 768px) {
     @for $i from 1 through $columnsCount {
         .col-md-#{$i} {
@@ -41,6 +47,7 @@ $columnsCount: 12;
         }
     }
 }
+
 @media (min-width: 1200px) {
     @for $i from 1 through $columnsCount {
         .col-xl-#{$i} {
