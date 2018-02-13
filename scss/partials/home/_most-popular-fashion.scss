@@ -29,7 +29,13 @@
         }
     }
     .cloths {
+        border-bottom: 2px solid $grey;
+        padding-bottom: 3em;
+        @media only screen and (min-width: 1200px) {
+            padding-bottom: 5.8em;
+        }
         .cloth-placing {
+            @include transition(all 0.5s ease);
             margin: 0.5em 1em;
             background: $grey;
             height: 375px;
@@ -41,6 +47,7 @@
             }
         }
         .cloth-placing-small {
+            @include transition(all 0.5s ease);
             margin: 0.5em 1em;
             background: $grey;
             height: 375px;
@@ -49,6 +56,16 @@
             }
             @media only screen and (min-width: 1200px) {
                 height: 325px;
+            }
+        }
+        .clothes-price {
+            position: absolute;
+            font-size: 14px;
+            font-weight: 500;
+            color: $text-color;
+            margin: 0.3em;
+            sup {
+                font-size: 12px;
             }
         }
         .item-4-position {
