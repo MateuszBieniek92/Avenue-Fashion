@@ -1,1 +1,46 @@
+footer {
+    background: $header-color;
 
+    overflow: auto;
+    @media only screen and (min-width: 768px) {
+        height: 50px;
+    }
+    .copy-bar {
+        ul {
+            list-style-type: none;
+            color: $top-bar-text;
+            font-weight: 600;
+            text-align: center;
+            @media only screen and (min-width: 768px) {
+                text-align: left;
+            }
+            li {
+                padding: 1em 0;
+                @media only screen and (min-width: 768px) {
+                    padding: 0;
+                    margin: 1.15em 1em 0 0;
+                }
+            }
+            :first-child {
+                @media only screen and (min-width: 768px) {
+                    float: left;
+                    strong {
+                        float: right;
+                    }
+                }
+            }
+            :nth-child(3) {
+                display: none;
+                @media only screen and (min-width: 768px) {
+                    display: inline-block;
+                }
+            }
+            :nth-child(2),
+            :nth-child(3) {
+                @media only screen and (min-width: 768px) {
+                    float: right;
+                }
+            }
+        }
+    }
+}
