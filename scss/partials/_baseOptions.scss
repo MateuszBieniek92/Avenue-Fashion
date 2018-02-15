@@ -19,6 +19,22 @@ $columnsCount: 12;
     margin: 0 auto;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
 .row {
     &::after,
     &::before {
