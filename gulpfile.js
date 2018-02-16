@@ -7,7 +7,7 @@ var minify = require('gulp-minify');
 gulp.task('hint', function () {
     return gulp.src('js/*.js')
         .pipe(jshint())
-        .pipe(jshint.reporter('default'))
+        .pipe(jshint.reporter('default'));
 });
 
 gulp.task('sass', function () {
@@ -19,20 +19,20 @@ gulp.task('sass', function () {
             outputStyle:  'compressed' , //'compressed',  // 'nested' ,
             sourceComments: 'map'
         }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('compress', function() {
-  gulp.src('js/*.js')
-    .pipe(minify({
-        ext:{
-            src:'-debug.js',
-            min:'.js'
-        },
-        exclude: ['tasks'],
-        ignoreFiles: ['.combo.js', '-min.js']
-    }))
-    .pipe(gulp.dest('dist'))
+    gulp.src('js/*.js')
+        .pipe(minify({
+            ext:{
+                src:'-debug.js',
+                min:'.js'
+            },
+            exclude: ['tasks'],
+            ignoreFiles: ['.combo.js', '-min.js']
+        }))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function () {
