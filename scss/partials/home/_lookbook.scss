@@ -4,13 +4,13 @@
     @media only screen and (min-width: 900px) {
         margin-top: 6em;
     }
-    .lbk-list {
+    .lbk__list {
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 5em;
-        .lbk-content {
+        .lbk__content {
             width: auto;
             background: $grey;
             overflow: auto;
@@ -30,14 +30,14 @@
             @media only screen and (min-width: 1590px) {
                 width: 32%;
             }
-            .image-position {
+            .image__position {
                 position: relative;
                 height: 350px;
                 @media only screen and (min-width: 450px) {
                     height: 450px;
                 }
             }
-            .lbk-image {
+            .lbk__image {
                 position: absolute;
                 z-index: 999;
                 bottom: 0;
@@ -52,19 +52,19 @@
                     left: 20px;
                 }
             }
-            .lbk-image-1 {
+            .lbk__image__1 {
                 background: url("../images/home/lookbook/lookbook-1.png") no-repeat center;
                 background-size: contain;
             }
-            .lbk-image-2 {
+            .lbk__image__2 {
                 background: url("../images/home/lookbook/lookbook-2.png") no-repeat center;
                 background-size: contain;
             }
-            .lbk-image-3 {
+            .lbk__image__3 {
                 background: url("../images/home/lookbook/lookbook-3.png") no-repeat center;
                 background-size: contain;
             }
-            .lbk-text {
+            .lbk__text {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -111,7 +111,7 @@
                         padding: 0;
                     }
                 }
-                .lbk-btn {
+                .lbk__btn {
                     width: 130px;
                     height: 50px;
                     margin-top: 2em;

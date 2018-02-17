@@ -1,11 +1,11 @@
 header {
     position: relative;
     z-index: 100;
-    .sign-in-bar {
+    .sign__in__bar {
         background-color: $header-color;
         height: 45px;
     }
-    .sign-in-list {
+    .sign__in__list {
         list-style-type: none;
         padding: 0.9em 0;
         font-weight: bold;
@@ -17,7 +17,7 @@ header {
             font-family: "Montserrat";
             color: $top-bar-text;
         }
-        .language-select {
+        .language__select {
             margin-left: 1em;
             float: left;
             display: flex;
@@ -37,7 +37,7 @@ header {
                 margin: 0 0 0 8em;
             }
         }
-        .baket-btn {
+        .baket__btn {
             display: none;
             @media only screen and (min-width: 900px) {
                 margin-right: 2.7em;
@@ -54,20 +54,20 @@ header {
                 padding: 1em;
                 font-weight: 300;
             }
-            .baket-arrow {
+            .baket__arrow {
                 margin: 1.2em 1.6em 1em 0;
             }
             &:hover {
                 cursor: pointer;
             }
         }
-        .sign-in-btn {
+        .sign__in__btn {
             margin-right: 1em;
             @media only screen and (min-width: 1025px) {
                 margin-right: 6.2em;
             }
         }
-        .register-btn {
+        .register__btn {
             margin-right: 0.5em;
             @media only screen and (min-width: 450px) {
                 margin-right: 2.6em;
@@ -133,7 +133,7 @@ header {
                     color: $text-color;
                 }
             }
-            .search-input {
+            .search__input {
                 display: none;
                 @media only screen and (min-width: 1200px) {
                     display: inline-block;
@@ -154,7 +154,7 @@ header {
                 -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
                 -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
                 box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
-                .submenu-list {
+                .submenu__list {
                     display: flex;
                     list-style-type: none;
                     li {
@@ -174,7 +174,7 @@ header {
                         }
                     }
                 }
-                .submenu-banner {
+                .submenu__banner {
                     height: 180px;
                     width: 400px;
                     margin-bottom: 0.5em;
@@ -188,13 +188,13 @@ header {
                         font-size: 34px;
                         font-weight: 900;
                     }
-                    :last-child {
+                    :last__child {
                         font-weight: 500;
                     }
                 }
             }
         }
-        .hamburger-menu {
+        .hamburger__menu {
             float: right;
             margin: 0.5em 1em 0 0;
             @media only screen and (min-width: 900px) {

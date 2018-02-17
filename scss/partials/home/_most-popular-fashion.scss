@@ -1,5 +1,5 @@
-.most-popular-clothes {
-    .cloth-choice {
+.most__popular__clothes {
+    .cloth__choice {
         display: flex;
         flex-direction: column;
         list-style-type: none;
@@ -33,7 +33,7 @@
         @media only screen and (min-width: 1200px) {
             padding-bottom: 5.8em;
         }
-        .cloth-placing {
+        .cloth__placing {
             @include transition(all 0.5s ease);
             margin: 0.5em 1em;
             background: $grey;
@@ -44,7 +44,7 @@
             @media only screen and (min-width: 1200px) {
                 height: 420px;
             }
-            .cloth-active-hover {
+            .cloth__active__hover {
                 @media only screen and (min-width: 1200px) {
                     top:395px;
                 }
@@ -54,17 +54,17 @@
                 z-index: 999;
                 @include transition(all 0.8s ease);
                 color: $white;
-                .cloth-active-hover {
+                .cloth__active__hover {
                     top: 375px;
                 }
                 @media only screen and (min-width: 1200px) {
-                    .cloth-active-hover {
+                    .cloth__active__hover {
                         top: 420px;
                     }
                 }
             }
         }
-        .cloth-placing-small {
+        .cloth__placing__small {
             @include transition(all 0.5s ease);
             margin: 0.5em 1em;
             background: $grey;
@@ -80,17 +80,17 @@
                 z-index: 999;
                 @include transition(all 0.8s ease);
                 color: $white;
-                .cloth-active-hover {
+                .cloth__active__hover {
                     top: 375px;
                 }
                 @media only screen and (min-width: 1200px) {
-                    .cloth-active-hover {
+                    .cloth__active__hover {
                         top: 325px;
                     }
                 }
             }
         }
-        .clothes-price {
+        .clothes__price {
             position: absolute;
             font-size: 14px;
             font-weight: 500;
@@ -100,37 +100,37 @@
                 font-size: 12px;
             }
         }
-        .item-4-position {
+        .item__4__position {
             @media only screen and (min-width: 1200px) {
                 margin: -6em 0.8em;
             }
         }
-        .cloth-position {
+        .cloth__position {
             height: 100%;
             width: 100%;
             max-width: 100%;
         }
-        .cloth-1 {
+        .cloth__1 {
             background: url("../images/home/items/item-1.jpg") no-repeat center;
             background-size: contain;
         }
-        .cloth-2 {
+        .cloth__2 {
             background: url("../images/home/items/item-2.jpg") no-repeat center;
             background-size: contain;
         }
-        .cloth-3 {
+        .cloth__3 {
             background: url("../images/home/items/item-3.jpg") no-repeat center;
             background-size: contain;
         }
-        .cloth-4 {
+        .cloth__4 {
             background: url("../images/home/items/item-4.jpg") no-repeat center;
             background-size: contain;
         }
-        .cloth-5 {
+        .cloth__5 {
             background: url("../images/home/items/item-5.png") no-repeat center;
             background-size: contain;
         }
-        .cloth-6 {
+        .cloth__6 {
             background: url("../images/home/items/item-6.jpg") no-repeat center;
             background-size: contain;
             margin-bottom: 5.8em;
@@ -139,13 +139,13 @@
 }
 
 /// hover animation  
-.cloth-hover-shadow {
+.cloth__hover__shadow {
     -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
 }
 
-.cloth-active-hover {
+.cloth__active__hover {
     color: #fff;
     position: absolute;
     top: 350px;
@@ -159,21 +159,21 @@
     @media only screen and (min-width: 1200px) {
         top:300px;
     }
-    .info-header {
+    .info__header {
         color: $main-text-color;
         text-align: center;
         font-weight: 900;
         font-size: 13px;
         margin: 1em;
     }
-    .info-desc {
+    .info__desc {
         color: $text-color;
         text-align: center;
         font-weight: 500;
         font-size: 13px;
         margin: 1em;
     }
-    .info-cloth {
+    .info__cloth {
         display: flex;
         flex-direction: row;
         justify-content: center;

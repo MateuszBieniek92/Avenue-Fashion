@@ -1,8 +1,8 @@
-.more-info {
+.more__info {
     background: $grey;
     margin-top: 2em;
     overflow: auto;
-    .shop-info {
+    .shop__info {
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -33,14 +33,14 @@
                 }
             }
         }
-        .contact-details {
+        .contact__details {
             li:hover {
                 color: $top-bar-text;
                 cursor: auto;
             }
         }
     }
-    .social-media {
+    .social__media {
         list-style-type: none;
         margin: 3em 0;
         text-align: center;
@@ -54,7 +54,7 @@
             flex-direction: column;
             justify-content: center;
         }
-        .award-banner {
+        .award__banner {
             background: $header-color;
             float: left;
             @media only screen and (min-width: 768px) {
@@ -75,7 +75,7 @@
                 }
             }
         }
-        .social-banner {
+        .social__banner {
             background: $aqua;
             float: right;
             flex-direction: row;
